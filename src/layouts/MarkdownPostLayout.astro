@@ -1,0 +1,11 @@
+---
+const { frontmatter } = Astro.props;
+import Navigation from "../pages/components/Navigation.astro";
+import "../styles/global.css";
+---
+
+<meta charset="utf-8" />
+<Navigation />
+<h1>{frontmatter.title}</h1>
+<p>Written by {frontmatter.author}</p>
+<slot />
